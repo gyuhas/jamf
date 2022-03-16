@@ -8,7 +8,7 @@ h1 {
       height: 100vh;
       position: relative;
   }
-  #options-picker {
+  #o-picker {
     right: 0;
     background-color: #fff;
     border-left: 1px solid rgba(0,0,0,.1);
@@ -20,7 +20,7 @@ h1 {
     transition-duration: 250ms;
     transition-property: right;
 }
-.options {
+.o-picker__options {
   padding: 4px 4px 16px;
 }
 .card-options__checkbox {
@@ -47,7 +47,7 @@ h1 {
 #card {
     flex: auto;
 }
-.card-container {
+.c-container {
     position: absolute;
     padding: 40px;
     bottom: 0;
@@ -66,11 +66,21 @@ h1 {
     opacity: 1;
     visibility: visible;
 }
-.card-contained-stage {
+.c-conatiner__stage {
     width: 344px;
     border-radius: 4px;
     background-color: #fff;
-    background-color: var(--mdc-theme-surface, #fff);
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.c-conatiner__stage-light {
+    width: 300px;
+    height: 80vh;
+    border-radius: 4px;
+    background-color: rgb(190, 178, 178);
     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
     display: flex;
     flex-direction: column;

@@ -1,6 +1,6 @@
 <template>
-<div id="options-picker">
-  <div class="options">
+<div id="o-picker">
+  <div class="o-picker__options">
     <div class="form-field ">
      <ul>
       <li v-for="(n, index) in comps" :key="index">

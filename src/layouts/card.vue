@@ -1,6 +1,6 @@
 <template>
 <div id="card">
-    <div class="card-container">
+    <div class="c-container">
         <component :is="currentComp"/>
     </div>
   </div>
@@ -8,10 +8,10 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import CardSimple from './components/cardSimple';
-import CardImageMiddle from './components/cardImageMiddle';
-import CardImageTop from './components/cardImageTop';
-import CardLight from './components/cardLight';
+import CardSimple from './components/cardSimple.vue';
+import CardImageMiddle from './components/cardImageMiddle.vue';
+import CardImageTop from './components/cardImageTop.vue';
+import CardLight from './components/cardLight.vue';
 
 
 @Component({
