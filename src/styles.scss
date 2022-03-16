@@ -1,0 +1,78 @@
+h1 {
+    color: purple;
+  }
+  #app {
+      background: #fafafa;
+      flex: 1 1 auto;
+      min-height: 250px;
+      height: 100vh;
+      position: relative;
+  }
+  #options-picker {
+    right: 0;
+    background-color: #fff;
+    border-left: 1px solid rgba(0,0,0,.1);
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+    width: 200px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: right;
+}
+.options {
+  padding: 4px 4px 16px;
+}
+.card-options__checkbox {
+    padding: 0 0 0 8px;
+} 
+.form-field {
+    font-family: Roboto, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    letter-spacing: .0178571429em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    color: rgba(0,0,0,.87);
+    color: var(--mdc-theme-text-primary-on-background, rgba(0, 0, 0, 0.87));
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+//cards 
+#card {
+    flex: auto;
+}
+.card-container {
+    position: absolute;
+    padding: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition-duration: 250ms;
+    transition-property: opacity,visibility;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hidden;
+    z-index: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.card-contained-stage {
+    width: 344px;
+    border-radius: 4px;
+    background-color: #fff;
+    background-color: var(--mdc-theme-surface, #fff);
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
